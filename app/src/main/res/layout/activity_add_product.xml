@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_product">
+      <TextView
+          android:id="@+id/vendor"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Welcome Vendor"
+          android:textSize="30dp"
+          android:gravity="center"
+          android:textStyle="bold"
+          />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll1"
+      android:layout_below="@+id/vendor"
+    android:orientation="horizontal"
+    android:layout_marginTop="30dp"
+    android:weightSum="3"
+
+    >
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+            android:text="All items"
+            android:textSize="10dp"
+          android:layout_weight="1"
+          />
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Out of stock"
+          android:textSize="10dp"
+          android:layout_marginLeft="30dp"
+          android:layout_weight="1"
+          />
+
+      </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:orientation="horizontal"
+    android:id="@+id/ll2"
+    android:layout_marginTop="30dp"
+    android:layout_below="@+id/ll1"
+    android:weightSum="3"
+    >
+      <ImageButton
+          android:id="@+id/img_btn1"
+          android:layout_width="250dp"
+          android:layout_height="110dp"
+          android:src="@drawable/upload"
+          android:layout_weight="1"
+          />
+      <ImageButton
+          android:id="@+id/img_btn2"
+          android:layout_width="250dp"
+          android:layout_height="110dp"
+         android:src="@drawable/upload"
+          android:layout_weight="1"
+          />
+      <ImageButton
+          android:id="@+id/img_btn3"
+          android:layout_width="250dp"
+          android:layout_height="110dp"
+
+          android:src="@drawable/upload"
+          android:layout_weight="1"
+          />
+</LinearLayout>
+
+      <LinearLayout
+            android:id="@+id/ll3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginTop="30dp"
+          android:weightSum="6"
+          android:layout_below="@+id/ll2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5"
+                >
+            <TextView
+                android:id="@+id/cat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Category"
+                android:textColor="@color/teal_200"
+                android:textSize="20dp"
+
+                />
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:hint="Fruits and Vegetables"
+
+                />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5"
+                >
+                  <TextView
+                      android:id="@+id/pdt_name"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="Product Name"
+                      android:textColor="@color/teal_200"
+                      android:textSize="20dp"
+
+                      />
+                  <EditText
+                      android:id="@+id/et2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="4"
+                      android:hint="Apple"
+
+                      />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5"
+                >
+                  <TextView
+                      android:id="@+id/amt"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="Price Amount"
+                      android:textColor="@color/teal_200"
+                      android:textSize="20dp"
+
+                      />
+                  <EditText
+                      android:id="@+id/et3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="4"
+                      android:hint="100"
+
+                      />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5"
+                >
+                  <TextView
+                      android:id="@+id/gst"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="GST Amount"
+                      android:textColor="@color/teal_200"
+                      android:textSize="20dp"
+
+                      />
+                  <EditText
+                      android:id="@+id/et4"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="4"
+                      android:hint="18"
+
+                      />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5"
+                >
+                  <TextView
+                      android:id="@+id/dc"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="delivery Charge"
+                      android:textColor="@color/teal_200"
+                      android:textSize="20dp"
+
+                      />
+                  <EditText
+                      android:id="@+id/et5"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="4"
+                      android:hint="40"
+
+                      />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:weightSum="5"
+                >
+                  <TextView
+                      android:id="@+id/off"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:text="Offer(%)"
+                      android:textColor="@color/teal_200"
+                      android:textSize="20dp"
+
+                      />
+                  <EditText
+                      android:id="@+id/et6"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="4"
+                      android:hint="15%"
+
+                      />
+
+
+            </LinearLayout>
+
+      </LinearLayout>
+
+          <Button
+              android:id="@+id/btn_upload"
+              android:layout_width="200dp"
+              android:layout_height="wrap_content"
+                android:layout_below="@+id/ll3"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/email"
+                android:text="Upload"
+              android:layout_marginTop="30dp"
+               />
+
+
+
+
+</RelativeLayout>
